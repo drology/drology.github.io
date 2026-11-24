@@ -116,25 +116,6 @@
       ],
       type: '제품 유형: 일반식품 (건강기능식품이 아닙니다)',
       url: STORE + '/products/9478079588'
-    },
-    chondroitin: {
-      img: 'assets/p-chondroitin.jpg',
-      alt: '닥터올로지 올인원 콘드로이친 14포',
-      kicker: 'Chondroitin Complex',
-      title: '올인원 콘드로이친',
-      line: '보스웰리아 · 커큐민 · 초록입홍합 · 소연골 · 14포',
-      priceLabel: '1개 기준 · 일시품절',
-      rate: '', price: '14,900원', orig: '86,000원',
-      chips: ['14포', '1일 1포', '복합 원료'],
-      rows: [
-        ['구성', '14포 (1개)'],
-        ['원료', '콘드로이친 · 보스웰리아 · 커큐민 · 초록입홍합 · 소연골'],
-        ['섭취 방법', '1일 1포'],
-        ['구성별 가격', '1개 14,900원 · 2개 29,500원 · 3개 43,900원 · 4개 55,900원'],
-        ['판매 상태', '일시품절 (2026년 11월 23일 기준) — 재입고 여부는 스토어에서 확인해 주세요'],
-        ['평점', '4.92 · 리뷰 653건']
-      ],
-      url: STORE + '/products/11701537979'
     }
   };
 
@@ -256,6 +237,14 @@
      --------------------------------------------------------- */
   var tabs = $$('.tab');
   var products = $$('.product');
+  var productGrid = $('.product-grid');
+
+  function centerSingle() {
+    if (!productGrid) return;
+    var shown = products.filter(function (p) { return !p.classList.contains('is-hidden'); });
+    productGrid.classList.toggle('is-single', shown.length === 1 && shown[0].getAttribute('data-cat') !== 'store');
+  }
+
   tabs.forEach(function (tab) {
     tab.addEventListener('click', function () {
       tabs.forEach(function (t) {
@@ -278,6 +267,7 @@
           p.style.transform = 'none';
         }
       });
+      centerSingle();
     });
   });
 

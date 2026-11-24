@@ -306,11 +306,13 @@ section[id]{scroll-margin-top:88px}
 .lineup{background:var(--paper)}
 .tabs{display:flex;gap:8px;margin-bottom:32px;flex-wrap:wrap}
 .tab{padding:10px 20px;border-radius:999px;border:1px solid var(--line);background:transparent;
-  font-size:.86rem;font-weight:500;color:var(--muted);transition:.25s}
+  font-size:.86rem;font-weight:500;color:var(--muted);white-space:nowrap;transition:.25s}
 .tab:hover{color:var(--ink);border-color:var(--ink-2)}
 .tab.is-active{background:var(--ink);border-color:var(--ink);color:#fff}
 
 .product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:start}
+.product-grid.is-single{display:flex;justify-content:center}
+.product-grid.is-single .product{width:100%;max-width:430px}
 .product{border-radius:var(--radius);overflow:hidden;background:#fff;border:1px solid var(--line-soft);
   display:flex;flex-direction:column;transition:transform .5s var(--ease),box-shadow .5s var(--ease),opacity .4s}
 .product:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
@@ -319,7 +321,7 @@ section[id]{scroll-margin-top:88px}
 .product-wide .product-media{aspect-ratio:auto;min-height:100%}
 .product-wide .product-media img{object-position:58% 50%}
 .product-wide .product-body{padding:30px}
-.product-all{grid-column:span 2;background:linear-gradient(155deg,#0a252b,#10383f 70%,#0a252b);color:#eaf5f6;border-color:transparent;position:relative;overflow:hidden}
+.product-all{grid-column:span 3;background:linear-gradient(155deg,#0a252b,#10383f 70%,#0a252b);color:#eaf5f6;border-color:transparent;position:relative;overflow:hidden}
 .product-all::before{content:'';position:absolute;width:340px;height:340px;right:-110px;top:-130px;border-radius:50%;
   background:radial-gradient(circle,rgba(18,184,203,.4),transparent 68%)}
 .product-all-inner{padding:34px 32px;display:flex;flex-direction:column;gap:12px;justify-content:center;height:100%;position:relative}
@@ -570,6 +572,8 @@ body.is-locked{overflow:hidden}
   .hero-actions .btn{width:100%}
   .modal-panel{max-height:92vh}
   .modal-scroll{max-height:92vh}
+  .tabs{gap:6px;margin-bottom:26px}
+  .tab{padding:9px 14px;font-size:.8rem}
 }
 
 @media (max-width:440px){

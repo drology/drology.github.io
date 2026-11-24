@@ -84,8 +84,8 @@
           <a class="btn btn-ghost" href="#signature">시그니처 제품 보기</a>
         </div>
         <ul class="hero-meta reveal" data-delay="4">
-          <li><strong>6</strong><span>제품 라인업</span></li>
-          <li><strong>13,364</strong><span>누적 리뷰</span></li>
+          <li><strong>5</strong><span>제품 라인업</span></li>
+          <li><strong>12,711</strong><span>누적 리뷰</span></li>
           <li><strong>4.89</strong><span>평균 평점</span></li>
         </ul>
       </div>
@@ -135,7 +135,7 @@
         <span class="stat-label">스토어 관심 고객</span>
       </div>
       <div class="stat reveal" data-delay="1">
-        <span class="stat-num" data-count="13364" data-comma="1" data-suffix="건">13,364건</span>
+        <span class="stat-num" data-count="12711" data-comma="1" data-suffix="건">12,711건</span>
         <span class="stat-label">누적 리뷰</span>
       </div>
       <div class="stat reveal" data-delay="2">
@@ -143,7 +143,7 @@
         <span class="stat-label">평균 평점</span>
       </div>
       <div class="stat reveal" data-delay="3">
-        <span class="stat-num" data-count="6" data-suffix="종">6종</span>
+        <span class="stat-num" data-count="5" data-suffix="종">5종</span>
         <span class="stat-label">판매 중인 라인</span>
       </div>
     </div>
@@ -374,14 +374,16 @@
       <div class="section-head reveal">
         <p class="section-label">LINEUP</p>
         <h2 class="section-title">전 제품 라인업</h2>
-        <p class="section-desc">네이버 스마트스토어 <strong>닥터스초이스</strong>에서 판매 중인 닥터올로지 6개 라인입니다. 카드를 누르면 상세 정보를 볼 수 있습니다.</p>
+        <p class="section-desc">네이버 스마트스토어 <strong>닥터스초이스</strong>에서 판매 중인 닥터올로지 5개 라인입니다. 카드를 누르면 상세 정보를 볼 수 있습니다.</p>
       </div>
 
       <div class="tabs reveal" role="tablist" aria-label="제품 카테고리">
         <button class="tab is-active" role="tab" aria-selected="true" data-filter="all">전체</button>
         <button class="tab" role="tab" aria-selected="false" data-filter="collagen">콜라겐</button>
-        <button class="tab" role="tab" aria-selected="false" data-filter="daily">데일리 케어</button>
-        <button class="tab" role="tab" aria-selected="false" data-filter="joint">조인트 케어</button>
+        <button class="tab" role="tab" aria-selected="false" data-filter="set">콜라겐+글루타치온</button>
+        <button class="tab" role="tab" aria-selected="false" data-filter="melaniq">멜라니크</button>
+        <button class="tab" role="tab" aria-selected="false" data-filter="folate">활성 엽산</button>
+        <button class="tab" role="tab" aria-selected="false" data-filter="glutathione">글루타치온</button>
       </div>
 
       <div class="product-grid">
@@ -422,7 +424,7 @@
         </article>
 
         <!-- B. Set -->
-        <article class="product reveal" data-cat="collagen" data-product="set" data-delay="1">
+        <article class="product reveal" data-cat="set" data-product="set" data-delay="1">
           <div class="product-media tint-mint">
             <span class="badge">1개월 세트</span>
             <img src="assets/p-set.jpg" alt="닥터올로지 콜라겐 & 글루타치온 세트" width="1000" height="1000" loading="lazy">
@@ -449,7 +451,7 @@
         </article>
 
         <!-- C. Melatonin -->
-        <article class="product reveal" data-cat="daily" data-product="melaniq" data-delay="2">
+        <article class="product reveal" data-cat="melaniq" data-product="melaniq" data-delay="2">
           <div class="product-media tint-navy">
             <span class="badge">2개월분</span>
             <img src="assets/p-melatonin.jpg" alt="닥터올로지 멜라니크 식물성 멜라토닌" width="1000" height="1000" loading="lazy">
@@ -476,7 +478,7 @@
         </article>
 
         <!-- D. Folate -->
-        <article class="product reveal" data-cat="daily" data-product="folate" data-delay="3">
+        <article class="product reveal" data-cat="folate" data-product="folate" data-delay="3">
           <div class="product-media tint-green">
             <span class="badge">2개월분</span>
             <img src="assets/p-folate.jpg" alt="닥터올로지 올인원 활성 엽산 800 비타민D" width="1000" height="1000" loading="lazy">
@@ -503,7 +505,7 @@
         </article>
 
         <!-- E. Glutathione -->
-        <article class="product reveal" data-cat="daily" data-product="glutathione" data-delay="4">
+        <article class="product reveal" data-cat="glutathione" data-product="glutathione" data-delay="4">
           <div class="product-media tint-sand">
             <span class="badge">1개월분</span>
             <img src="assets/p-glutathione.jpg" alt="닥터올로지 영국산 글루타치온 비타민C" width="1000" height="1000" loading="lazy">
@@ -529,35 +531,8 @@
           </div>
         </article>
 
-        <!-- F. Chondroitin -->
-        <article class="product is-soldout reveal" data-cat="joint" data-product="chondroitin" data-delay="5">
-          <div class="product-media tint-blue">
-            <span class="badge badge-muted">일시품절</span>
-            <img src="assets/p-chondroitin.jpg" alt="닥터올로지 올인원 콘드로이친 보스웰리아" width="1000" height="1000" loading="lazy">
-            <button class="product-more" type="button" data-open="chondroitin">상세 보기
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
-            </button>
-          </div>
-          <div class="product-body">
-            <p class="product-kicker">Chondroitin Complex</p>
-            <h3 class="product-name">올인원 콘드로이친</h3>
-            <p class="product-line">보스웰리아 · 커큐민 · 초록입홍합 · 소연골 · 14포</p>
-            <ul class="chips"><li>14포</li><li>1일 1포</li><li>복합 원료</li></ul>
-            <div class="price-row">
-              <span class="price">14,900<em>원</em></span>
-              <span class="price-orig">86,000원</span>
-              <span class="soldout-note">재입고 문의</span>
-            </div>
-            <p class="unit-note">1개 14,900원 · 2개 29,500원 · 4개 55,900원</p>
-            <div class="product-foot">
-              <span class="rating"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.9 6.3.7-4.7 4.3 1.3 6.1L12 17l-5.6 3 1.3-6.1L3 9.6l6.3-.7L12 3z"/></svg><strong>4.92</strong><span>리뷰 653</span></span>
-              <a class="btn btn-line btn-sm" href="https://smartstore.naver.com/drchoice/products/11701537979" target="_blank" rel="noopener">살펴보기</a>
-            </div>
-          </div>
-        </article>
-
         <!-- Store card -->
-        <article class="product product-all reveal" data-cat="all" data-delay="6">
+        <article class="product product-all reveal" data-cat="store" data-delay="6">
           <div class="product-all-inner">
             <p class="product-kicker">Store</p>
             <h3>닥터스초이스<br>스마트스토어</h3>
@@ -566,7 +541,7 @@
               스토어 방문하기
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </a>
-            <p class="store-meta">관심 고객 17,873 · 누적 리뷰 13,364</p>
+            <p class="store-meta">관심 고객 17,873 · 누적 리뷰 12,711</p>
           </div>
         </article>
 
@@ -629,7 +604,7 @@
           <span class="rs-label">리뷰 수 가중<br>평균 평점</span>
         </div>
         <div class="rs-item">
-          <span class="rs-num">13,364</span>
+          <span class="rs-num">12,711</span>
           <span class="rs-label">판매 중인 상품<br>누적 리뷰</span>
         </div>
         <div class="rs-item">
@@ -670,7 +645,7 @@
         <details class="faq-item">
           <summary>제품 유형은 무엇인가요?</summary>
           <div class="faq-body">
-            <p>콜라겐·글루타치온 라인은 상품정보에 <strong>‘일반식품’</strong>으로 표기되어 있습니다. 멜라니크·활성 엽산·콘드로이친의 제품 유형과 원재료는 각 상품 페이지의 상품정보에서 확인하실 수 있습니다. 이 사이트는 어떤 제품에도 특정 기능성·효능을 표방하지 않습니다.</p>
+            <p>콜라겐·글루타치온 라인은 상품정보에 <strong>‘일반식품’</strong>으로 표기되어 있습니다. 멜라니크·활성 엽산의 제품 유형과 원재료는 각 상품 페이지의 상품정보에서 확인하실 수 있습니다. 이 사이트는 어떤 제품에도 특정 기능성·효능을 표방하지 않습니다.</p>
           </div>
         </details>
         <details class="faq-item">
